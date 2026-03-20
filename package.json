@@ -1,0 +1,26 @@
+{
+  "name": "claude-switch",
+  "version": "1.0.0",
+  "description": "Switch Claude Code between AI providers",
+  "type": "module",
+  "bin": {
+    "claude-switch": "./dist/cli.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsx src/cli.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "copilot-api": "^0.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "tsup": "^8.3.6",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
